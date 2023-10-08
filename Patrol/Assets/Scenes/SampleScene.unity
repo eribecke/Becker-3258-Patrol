@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 350017660}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -291,7 +291,7 @@ Transform:
   m_GameObject: {fileID: 350017659}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.63, y: 0.81, z: -14.09}
+  m_LocalPosition: {x: -1.63, y: 1, z: -14.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12285,7 +12285,7 @@ Transform:
   m_GameObject: {fileID: 713758417}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5000001, y: 0.49999994, z: 0.50000006, w: 0.49999988}
-  m_LocalPosition: {x: 10.34, y: -0.05, z: -29.36}
+  m_LocalPosition: {x: 10.34, y: -0.24, z: -29.36}
   m_LocalScale: {x: 1, y: 1.4972, z: 0.55007}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12481,7 +12481,7 @@ Transform:
   m_GameObject: {fileID: 941601991}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.97, z: 0}
+  m_LocalPosition: {x: 0, y: -0.977, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14535,7 +14535,7 @@ GameObject:
   - component: {fileID: 1245223803}
   - component: {fileID: 1245223802}
   - component: {fileID: 1245223808}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15858,6 +15858,8 @@ GameObject:
   - component: {fileID: 1659745814}
   - component: {fileID: 1659745813}
   - component: {fileID: 1659745812}
+  - component: {fileID: 1659745817}
+  - component: {fileID: 1659745816}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -15875,7 +15877,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0.85}
-  m_LocalScale: {x: 12.373494, y: 1, z: 9.605914}
+  m_LocalScale: {x: 14.571027, y: 1, z: 13.893994}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1451652103}
@@ -15922,7 +15924,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -15978,6 +15980,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1659745810}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1659745816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659745810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: e30f55bf8fdef1c48aa9f17b9afddc25, type: 2}
+--- !u!114 &1659745817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659745810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"player","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"detector","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 350017659}
+    - {fileID: 1451652097}
 --- !u!43 &1829357028
 Mesh:
   m_ObjectHideFlags: 0
